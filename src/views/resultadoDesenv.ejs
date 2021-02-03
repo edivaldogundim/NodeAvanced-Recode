@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Desenvolvedores Github</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <style>
+    body{
+        background-color: white;}
+.conteudo img{
+        width: 300px;}
+    .navbar-brand{
+        margin-left: 50px;
+    }
+</style>  
+</head>
+
+<body>
+    <header>
+        <div class="naveg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <a class="navbar-brand" href="#">Busque um CEP</a>
+                  <a class="navbar-brand" href="#">Desenvolvedores</a>
+          </nav>
+        </div>
+    </header>
+
+<div class="container">
+    <div class="card mt-2 mb-2">
+        <div class="card-body">
+            <div class="card-header bg-danger">
+                <h5 style="text-align: center;">Desenvolvedor Github</h5>           
+            </div>
+             <div style="text-align: center;"> 
+                 <img src="<%= dado.avatar_url %>">
+                 <h4 class="card-title"><%= dado.name %></h4><br>
+                 <strong><%= dado.name %></strong><br>
+                 <strong><%= dado.login %></strong><br>
+                 <strong><%= dado.url %></strong><br>
+                 <strong><%= dado.id %></strong>
+                
+            </div> 
+        </div>
+            <div class="card-body">
+                <a href="<%= dado.html_url %>" class="card-link">Link Github</a>
+            </div>
+        <a href="/" class="btn btn-outline-success">Procurar novo desenvolvedor</a>
+    </div>
+</body>
+</html>
